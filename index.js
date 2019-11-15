@@ -72,6 +72,7 @@ const start = () => {
 
   var boxes = [];
 
+
   function draw() {
     ctx.fillStyle = "rgba(0, 0, 0, 0.2)";
     ctx.fillRect(0, 0, c.width, c.height);
@@ -100,8 +101,9 @@ const start = () => {
   resize();
   draw();
 
-  while (boxes.length < 2) {
+  while (boxes.length < 15) {
     boxes.push(new Box());
+    boxes.forEach(b => b.x = (Math.random() * c.width))
   }
   window.onresize = resize;
 };
