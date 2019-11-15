@@ -76,7 +76,12 @@ const start = () => {
     ctx.fillStyle = "rgba(0, 0, 0, 0.2)";
     ctx.fillRect(0, 0, c.width, c.height);
 
-    if (Math.random() * 100 <= 3) {
+    let randomCount = 5;
+    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+        randomCount = 6;
+    }
+
+    if (Math.random() * 100 <= randomCount) {
       boxes.push(new Box());
     }
     for (var i = 0; i < boxes.length; i++) {
