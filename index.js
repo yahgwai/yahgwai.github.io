@@ -12,7 +12,7 @@ const start = () => {
   var colors = ["rgb(219, 219, 40)"];
 
   function Box() {
-    this.half_size = Math.floor(Math.sqrt(Math.random() * 40) + 1);
+    this.half_size = Math.floor(Math.random() * 5 + 1);
     this.x = 0;
     this.y = Math.floor(Math.random() * c.height + 1);
     this.r = Math.PI / 4;
@@ -48,8 +48,8 @@ const start = () => {
       };
     };
     this.move = function() {
-      var speed = 2 * Math.sqrt(this.half_size);
-      this.x += speed * 4;
+      var speed = this.half_size * this.half_size;
+      this.x += speed ;
     };
     this.draw = function() {
       var dots = this.getDots();
