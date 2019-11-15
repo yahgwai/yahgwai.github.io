@@ -78,7 +78,7 @@ const start = () => {
 
     let randomCount = 5;
     if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-        randomCount = 6;
+        randomCount = 8;
     }
 
     if (Math.random() * 100 <= randomCount) {
