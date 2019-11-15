@@ -13,9 +13,6 @@
   line-height: 1.2;
   background-color: rgb(0, 0, 0);
   background-image: none;
-  /* font-size: $font-size-primary;
-    color: $color-primary; /*
-    font-family: $font-family; */
 }
 
 .div_bg {
@@ -28,20 +25,11 @@
 
 .text_container {
   margin: 0;
-  /* background: black; */
   position: absolute;
   top: 50%;
   left: 50%;
   width: 100%;
-  /* margin-right: -50%; */
   transform: translate(-50%, -100%);
-}
-
-.underline {
-  border-bottom: 2px solid currentColor;
-  display: inline-block;
-  line-height: 0.85;
-  text-shadow: 2px 2px black, 2px -2px black, -2px 2px black, -2px -2px black;
 }
 
 .text-shadow {
@@ -49,7 +37,6 @@
 }
 
 .underline2 {
-  /* background-size: 1px 100px; */
   box-shadow: inset 1px -0.1em black, inset 0 -0.15em #ffff00;
   display: inline;
 }
@@ -62,8 +49,6 @@
   height: 30px;
   width: 30px;
   background-color: #ffff00;
-
-  /* position: absolute; */
 }
 
 .bottom-square {
@@ -82,7 +67,7 @@
 }
 
 .title div {
-    display: inline-block;
+  display: inline-block;
 }
 
 .subtitle {
@@ -91,14 +76,14 @@
 
 @media only screen and (max-width: 420px) {
   .title {
-    font-size:60px;
+    font-size: 60px;
   }
 
   .subtitle {
     font-size: 20px;
   }
 
-  .bottom-square {  
+  .bottom-square {
     left: -4px;
 
     width: 8px;
@@ -130,16 +115,12 @@
   font-size: 14px;
   transform: translate(-50%, 0);
 }
-
-.team {
-  font-size: 14px;
-}
-
 a {
   color: #ffff00;
 }
 .details p {
   margin: 3px;
+  margin-bottom: 6px;
 }
 
 .page .container {
@@ -147,13 +128,11 @@ a {
   top: 2%;
   margin: 0 auto;
   height: 97%;
-  width: 84%;
-  z-index: 100;
+  width: 87%;
   max-width: 1240px;
   position: relative;
   box-sizing: border-box;
   background-color: rgba(255, 255, 255, 0);
   color: #ffff00;
-
   font-family: "Elianto";
 }
