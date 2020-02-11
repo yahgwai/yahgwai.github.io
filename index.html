@@ -6,7 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>any.sender</title>
     <link
-      href="https://fonts.googleapis.com/css?family=Nunito&display=swap"
+      href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato&display=swap"
       rel="stylesheet"
     />
     <link
@@ -55,30 +59,57 @@
     <header class="header">
       <div class="container">
         <div class="header-top">
-          <div>
-            <a
-              class="a-button pisa-header-button mdc-button mdc-button--unelevated"
-              href="https://www.pisa.watch/"
-            >
-              <div class="mdc-button__ripple"></div>
-              <span class="mdc-button__label">Built by PISA</span>
+          <div class="twitter-container">
+            <a href="https://twitter.com/PisaResearch">
+              <img
+                width="35"
+                height="35"
+                src="./img/Twitter_Social_Icon_Circle_White.png"
+                alt="Twitter logo"
+              />
             </a>
           </div>
-          <div>
-            <a
-              class="a-button docs-header-button mdc-button mdc-button--unelevated"
-            >
-              <i class="doc-icon material-icons">insert_drive_file</i>
-              <div class="mdc-button__ripple"></div>
-              <span class="mdc-button__label">Read the docs</span>
+          <div class="github-container">
+            <a href="https://github.com/PISAresearch/docs.any.sender">
+              <img
+                width="32"
+                height="32"
+                src="./img/GitHub-Mark-Light-32px.png"
+                alt="Github logo"
+              />
+            </a>
+          </div>
+          <div class="slack-container">
+            <a href="https://join.slack.com/t/pisaresearch/shared_invite/enQtOTMzODczMTU1MTY4LTAxMmY2NTM1MzEzNjI0MjIwYjg4YjZmYjYyNzBhNTU1NjVkMTQ3MDQ0N2ZjNmVkMjNlOGFmMjAxMGVjMGYyNmM">
+              <img
+                width="64"
+                height="64"
+                src="./img/Slack_Mark_Monochrome_White.png"
+                alt="Slack logo"
+              />
             </a>
           </div>
         </div>
         <div class="main-title-container">
-          <h1 class="main-title">any<span class="title-dot">.</span>sender</h1>
-          <p class="main-subtitle">
-            Ethereum transactions made simple
-          </p>
+          <h1 class="main-title">
+            an<span class="last-y">y</span
+            ><span class="title-dot">.</span>sender
+          </h1>
+        </div>
+        <div class="subtitle-text-container">
+          <div class="subtitle">Ethereum transactions made simple</div>
+          <div class="subtitle-text">
+            any.sender is a transaction sending service that makes sure your
+            transaction is delivered on time, every time.
+          </div>
+          <a
+            class="subtitle-read-the-docs"
+            href="https://github.com/PISAresearch/docs.any.sender"
+          >
+            Read the docs<i class="material-icons docs-arrow">
+              arrow_forward
+            </i>
+          </a>
         </div>
       </div>
     </header>
@@ -86,42 +117,38 @@
       <section class="why">
         <div class="container">
           <h2 class="why-title">
-            Why?
+            Why use it?
           </h2>
           <ul class="reason-list">
             <li class="reason">
-              <!-- <i class="reason-icon material-icons">build</i> -->
-
               <i class="reason-icon material-icons">alarm</i>
-
               <h3 class="reason-title">
-                Buidl faster!
+                Build faster!
               </h3>
               <p class="reason-text">
-                Dont spend time dealing with nonces, reorgs or stuck
-                transactions. Just set a deadline and let any.sender do the hard
-                stuff
-              </p>
-            </li>
-            <li class="reason">
-              <!-- <i class="reason-icon material-icons">favorite</i> -->
-              <i class="reason-icon material-icons">favorite_border</i>
-              <h3 class="reason-title">
-                Better UX
-              </h3>
-              <p class="reason-text">
-                Your users won't need to think, or know, about gas prices. They
-                just set a deadline for when the tx must be mined
+                Accelerate development. Let any.sender deal with transaction
+                management so you can focus on what makes your dapp great.
               </p>
             </li>
             <li class="reason">
               <i class="reason-icon material-icons">send</i>
               <h3 class="reason-title">
-                Relaying
+                Meta transactions
               </h3>
               <p class="reason-text">
-                Use any.sender as a third party relayer to enable functionality
-                like <em>Dapp pays for user</em> and <em>MetaTransactions</em>
+                Send meta transactions via any.sender to enable gasless
+                interactions with your dapp.
+              </p>
+            </li>
+            <li class="reason">
+              <i class="reason-icon material-icons">favorite_border</i>
+              <h3 class="reason-title">
+                Better UX
+              </h3>
+              <p class="reason-text">
+                any.sender deals with nonce ordering, reorgs and stuck
+                transactions so you dont have to. Just set a deadline and let us
+                do the rest.
               </p>
             </li>
           </ul>
@@ -131,22 +158,12 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-bottom">
-          <div>
-            <a
-              class="a-button pisa-footer-button mdc-button mdc-button--unelevated"
-              href="https://www.pisa.watch/"
-            >
-              <div class="mdc-button__ripple"></div>
-              <span class="mdc-button__label">Built by PISA</span>
+          <div class="pisa">
+            <a href="https://www.pisa.watch/">
+              Built by
             </a>
-          </div>
-          <div>
-            <a
-              class="a-button docs-footer-button mdc-button mdc-button--unelevated"
-            >
-              <i class="doc-icon material-icons">insert_drive_file</i>
-              <div class="mdc-button__ripple"></div>
-              <span class="mdc-button__label">Read the docs</span>
+            <a href="https://www.pisa.watch/" class="pisa-name">
+              P/SA
             </a>
           </div>
         </div>
