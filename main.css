@@ -121,14 +121,15 @@ html {
 body {
   overflow-x: hidden;
   background-color: white;
-  font-family: 'Helvetica', "monospace";
+  font-family: "Helvetica", "monospace";
 }
 
 .header {
   position: relative;
   padding-bottom: 70px;
   background-color: #006cc4;
-  background-image: url("./img/smokeBackground.png");
+  /* background-color: #1a1b20; */
+  background-image: url("./img/smokeBackground.png") ;
   background-size: cover;
 }
 @media (max-width: 990px) {
@@ -150,7 +151,7 @@ body {
 }
 
 .github-container {
-    padding-left: 18px;
+  padding-left: 18px;
 }
 
 .main-title-container {
@@ -160,7 +161,7 @@ body {
   background-position: center;
   height: 400px;
   width: 400px;
-  margin: 60px auto 80px;
+  margin: 50px auto 120px;
   border-radius: 50%;
   background-color: white;
   display: flex;
@@ -176,13 +177,13 @@ body {
   }
 }
 
-@media( max-width: 400px) {
-    .main-title-container {
-        background-size: 410px 410px;
-        height: 320px;
-        width: 320px;
-        margin-top: 10px;
-      } 
+@media (max-width: 400px) {
+  .main-title-container {
+    background-size: 410px 410px;
+    height: 320px;
+    width: 320px;
+    margin-top: 10px;
+  }
 }
 
 .title-dot {
@@ -193,8 +194,6 @@ body {
   font-family: "Roboto Mono", monospace;
   max-width: 350px;
   margin: 0 auto;
-  /* padding-top: 160px; */
-  /* font-weight: 700; */
   font-size: 60px;
   color: black;
   text-align: center;
@@ -223,42 +222,42 @@ body {
   }
 }
 
-@media (max-width:400px) {
-    .main-title {
-        font-size: 48px;
-    }
+@media (max-width: 400px) {
+  .main-title {
+    font-size: 48px;
+  }
 }
 
 .subtitle-text-container {
-    color: white;
+  color: white;
 }
 @media (max-width: 768px) {
-    .subtitle-text-container {
-        margin: 0 20px;
-    }
+  .subtitle-text-container {
+    margin: 0 20px;
+  }
 }
 .subtitle {
-    font-size: 28px;
-    font-weight: 600;
-    padding-bottom: 10px;
+  font-size: 28px;
+  font-weight: 600;
+  padding-bottom: 10px;
 }
 .subtitle-text {
-    font-size: 24px;
-    padding-bottom: 15px;
+  font-size: 24px;
+  padding-bottom: 15px;
 }
 .subtitle-read-the-docs {
-    font-size: 20px;
-    font-weight: 600;
-    color: white;
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
 }
 .docs-arrow {
-    position: relative;
-    margin-left: 10px;
-    top: 5px;
+  position: relative;
+  margin-left: 10px;
+  top: 5px;
 }
 
 .why {
-  padding: 185px 0 225px;
+  padding: 140px 0 140px;
 }
 @media (max-width: 768px) {
   .why {
@@ -267,7 +266,7 @@ body {
 }
 
 .why-title {
-  margin-bottom: 50px;
+  margin-bottom: 100px;
   font-weight: 700;
   font-size: 28px;
   color: #2c1c08;
@@ -303,7 +302,7 @@ ul {
 }
 
 .reason-title {
-    margin-top: 7px;
+  margin-top: 7px;
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 22px;
@@ -328,7 +327,8 @@ footer {
 
 .footer {
   position: relative;
-  background-color: #0d124a;
+  /* background-color: #0d124a; */
+  background-color: #222226;
 }
 @media (max-width: 990px) {
   .footer {
@@ -350,13 +350,73 @@ footer {
 }
 
 .pisa a {
-    font-size: 22px;
-    font-weight: 600;
-    text-align: center;
-    text-decoration: none;
-    color: white;
+  font-size: 22px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  color: white;
 }
 
 .pisa a.pisa-name {
-    text-decoration: underline;
+  text-decoration: underline;
+}
+
+/*TODO: investigate from here on down*/
+.getting-started {
+  background: #1a1b20;
+  padding: 120px 0 50px 0   ;
+}
+
+.getting-started-title {
+  margin-bottom: 70px;
+  font-weight: 700;
+  font-size: 28px;
+  color: white; /*TODO: this colour?*/
+  line-height: 38px;
+  text-align: center;
+
+}
+.code-header {
+  font-size: 20px;
+  color: white; /*TODO: this colour?*/
+  line-height: 30px;
+  padding: 0 20px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+@media (max-width: 600px) {
+  .getting-started-title {
+    line-height: 54px;
+  }
+}
+
+.scrolling-wrapper {
+  -webkit-overflow-scrolling: touch;
+}
+
+/* TODO: check out these below - do we need them? */
+.code-title {
+  margin-bottom: 50px;
+  font-size: 16px;
+  color: #2c1c08;
+  text-align: center;
+  line-height: 24px;
+}
+
+.pre {
+  margin-bottom: 50px;
+  padding: 10px 50px;
+  /* border: 1px solid #ededf1; */
+  /* -webkit-border-radius: 3px; */
+  border-radius: 4px;
+  background: #282c34;
+  /* background: #f9fbfd; */
+  overflow: auto;
+}
+
+.code {
+  padding: 0 !important;
+  /* background: none !important; */
+  font-size: 13px;
+  line-height: 24px;
 }
