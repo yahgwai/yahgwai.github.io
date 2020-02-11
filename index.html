@@ -53,63 +53,61 @@
   </head>
   <body>
     <header class="header">
-      <div class="background">
-        <div class="container">
-          <div class="header-top">
-            <div class="twitter-container">
-              <a href="https://twitter.com/PisaResearch">
-                <img
-                  width="35"
-                  height="35"
-                  src="./img/Twitter_Social_Icon_Circle_White.png"
-                  alt="Twitter logo"
-                />
-              </a>
-            </div>
-            <div class="github-container">
-              <a href="https://github.com/PISAresearch/docs.any.sender">
-                <img
-                  width="32"
-                  height="32"
-                  src="./img/GitHub-Mark-Light-32px.png"
-                  alt="Github logo"
-                />
-              </a>
-            </div>
-            <div class="slack-container">
-              <a
-                href="https://join.slack.com/t/pisaresearch/shared_invite/enQtOTMzODczMTU1MTY4LTAxMmY2NTM1MzEzNjI0MjIwYjg4YjZmYjYyNzBhNTU1NjVkMTQ3MDQ0N2ZjNmVkMjNlOGFmMjAxMGVjMGYyNmM"
-              >
-                <img
-                  width="64"
-                  height="64"
-                  src="./img/Slack_Mark_Monochrome_White.png"
-                  alt="Slack logo"
-                />
-              </a>
-            </div>
-          </div>
-          <div class="main-title-container">
-            <h1 class="main-title">
-              an<span class="last-y">y</span
-              ><span class="title-dot">.</span>sender
-            </h1>
-          </div>
-          <div class="subtitle-text-container">
-            <div class="subtitle">Ethereum transactions made simple</div>
-            <div class="subtitle-text">
-              any.sender is a transaction sending service that makes sure your
-              transaction is delivered on time, every time.
-            </div>
-            <a
-              class="subtitle-read-the-docs"
-              href="https://github.com/PISAresearch/docs.any.sender"
-            >
-              Read the docs<i class="material-icons docs-arrow">
-                arrow_forward
-              </i>
+      <div class="container">
+        <div class="header-top">
+          <div class="twitter-container">
+            <a href="https://twitter.com/PisaResearch">
+              <img
+                width="35"
+                height="35"
+                src="./img/Twitter_Social_Icon_Circle_White.png"
+                alt="Twitter logo"
+              />
             </a>
           </div>
+          <div class="github-container">
+            <a href="https://github.com/PISAresearch/docs.any.sender">
+              <img
+                width="32"
+                height="32"
+                src="./img/GitHub-Mark-Light-32px.png"
+                alt="Github logo"
+              />
+            </a>
+          </div>
+          <div class="slack-container">
+            <a
+              href="https://join.slack.com/t/pisaresearch/shared_invite/enQtOTMzODczMTU1MTY4LTAxMmY2NTM1MzEzNjI0MjIwYjg4YjZmYjYyNzBhNTU1NjVkMTQ3MDQ0N2ZjNmVkMjNlOGFmMjAxMGVjMGYyNmM"
+            >
+              <img
+                width="64"
+                height="64"
+                src="./img/Slack_Mark_Monochrome_White.png"
+                alt="Slack logo"
+              />
+            </a>
+          </div>
+        </div>
+        <div class="main-title-container-left">
+          <h1 class="main-title">
+            an<span class="last-y">y</span
+            ><span class="title-dot">.</span>sender
+          </h1>
+        </div>
+        <div class="subtitle-text-container">
+          <div class="subtitle">Ethereum transactions made simple</div>
+          <div class="subtitle-text">
+            any.sender is a transaction sending service that makes sure your
+            transaction is delivered on time, every time.
+          </div>
+          <a
+            class="subtitle-read-the-docs"
+            href="https://github.com/PISAresearch/docs.any.sender"
+          >
+            Read the docs<i class="material-icons docs-arrow">
+              arrow_forward
+            </i>
+          </a>
         </div>
       </div>
     </header>
@@ -163,7 +161,7 @@
             1. Install the client
           </div>
           <div class="example-code-item">
-            <pre class="pre scrolling-wrapper"><code class="bash code">
+            <pre class="pre"><code class="bash code">
 npm i @any-sender/client
                         </code></pre>
           </div>
@@ -171,7 +169,7 @@ npm i @any-sender/client
             2. Use your favourite wallet to send funds to the relay contract.
           </div>
           <div class="example-code-item">
-            <pre class="pre scrolling-wrapper"><code class="typescript code">
+            <pre class="pre"><code class="typescript code">
 // send the funds
 const tx = await userWallet.sendTransaction({ 
     to: relayContractAddress, 
@@ -179,7 +177,7 @@ const tx = await userWallet.sendTransaction({
 });
 await tx.wait(12);
 
-// check the balance
+// check the balancef
 const client = new AnySenderClient(anySenderUrl, receiptSignerAddress);
 const balance = await client.balance(userWallet.address); // 1 ether
                     </code></pre>
@@ -188,7 +186,7 @@ const balance = await client.balance(userWallet.address); // 1 ether
             3. Create a transaction and relay it with any.sender.
           </div>
           <div class="example-code-item">
-            <pre class="pre scrolling-wrapper"><code class="typescript code">
+            <pre class="pre"><code class="typescript code">
 import { AnySenderClient } from "@any-sender/client";
 const client = new AnySenderClient(anySenderUrl, receiptSignerAddress);
 
