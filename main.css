@@ -112,7 +112,7 @@ html {
 
 body {
   overflow-x: hidden;
-  background-color: white;
+  background-color: #0a070f;
   font-family: "Helvetica", "monospace";
 }
 
@@ -146,6 +146,11 @@ body {
 .title-dot {
   color: #fa5432;
 }
+
+.main {
+    background-color: white;
+}
+
 .main-title {
   font-family: "Roboto Mono", monospace;
   max-width: 350px;
